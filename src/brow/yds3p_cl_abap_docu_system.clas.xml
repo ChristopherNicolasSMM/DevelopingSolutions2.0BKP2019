@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>YDS3P_CL_ABAP_DOCU_SYSTEM</CLSNAME>
+    <LANGU>P</LANGU>
+    <DESCRIPT>System Properties for ABAP  Docu</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <WITH_UNIT_TESTS>X</WITH_UNIT_TESTS>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>PRB</KEY>
+     <ENTRY>Problema em</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>YDS3P_CL_ABAP_DOCU_SYSTEM</CLSNAME>
+     <CMPNAME>CLASS_CONSTRUCTOR</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>CLASS_CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDS3P_CL_ABAP_DOCU_SYSTEM</CLSNAME>
+     <CMPNAME>SAP</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>SAP System</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDS3P_CL_ABAP_DOCU_SYSTEM</CLSNAME>
+     <CMPNAME>SEND_ERROR</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Writes Error Message in Log and Sends Message</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDS3P_CL_ABAP_DOCU_SYSTEM</CLSNAME>
+     <CMPNAME>SYSTEM_TYPE</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Type of System</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDS3P_CL_ABAP_DOCU_SYSTEM</CLSNAME>
+     <CMPNAME>TECHDEV</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Techdev System</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDS3P_CL_ABAP_DOCU_SYSTEM</CLSNAME>
+     <CMPNAME>UNKNOWN</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Not RFC compatible (ext. system)</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>YDS3P_CL_ABAP_CODEPAGE</CLSNAME>
+    <LANGU>P</LANGU>
+    <DESCRIPT>Code Page Utility Class</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <RSTAT>S</RSTAT>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>YDS3P_CL_ABAP_CODEPAGE</CLSNAME>
+     <CMPNAME>CONVERT_FROM</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Convert Buffer from Code Page</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDS3P_CL_ABAP_CODEPAGE</CLSNAME>
+     <CMPNAME>CONVERT_TO</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Convert String to Code Page</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDS3P_CL_ABAP_CODEPAGE</CLSNAME>
+     <CMPNAME>CURRENT</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Get Current Code Page</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDS3P_CL_ABAP_CODEPAGE</CLSNAME>
+     <CMPNAME>FOR_LANGUAGE</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Get Code Page for Language</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDS3P_CL_ABAP_CODEPAGE</CLSNAME>
+     <CMPNAME>SAP_CODEPAGE</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Get SAP Code Page by External Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDS3P_CL_ABAP_CODEPAGE</CLSNAME>
+     <CMPNAME>SAP_TO_HTTP</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Convert SAP Code Page to HTTP Code Page</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDS3P_CL_ABAP_CODEPAGE</CLSNAME>
+     <CMPNAME>SAP_TO_JAVA</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Convert SAP Code Page to Java Code Page</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
