@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>YDS3P_WS_JSON</CLSNAME>
+    <LANGU>P</LANGU>
+    <DESCRIPT>Classe para WebService JSon</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>YDS3P_WS_JSON</CLSNAME>
+     <CMPNAME>BAPIRET</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Ctg.tabela para BAPIRET2</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDS3P_WS_JSON</CLSNAME>
+     <CMPNAME>EXPORTE_DATA</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Dados de retorno</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDS3P_WS_JSON</CLSNAME>
+     <CMPNAME>GET_DATA</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Busca os dados do Web Service</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDS3P_WS_JSON</CLSNAME>
+     <CMPNAME>GET_WEBSERVICE</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Envia dados ao Web Service</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDS3P_WS_JSON</CLSNAME>
+     <CMPNAME>GS_BAPIRET2</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Parâmetro de retorno</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDS3P_WS_JSON</CLSNAME>
+     <CMPNAME>MAIN</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Iniciar a Classe</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDS3P_WS_JSON</CLSNAME>
+     <CMPNAME>SET_DATA</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Envio ao Web Service</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDS3P_WS_JSON</CLSNAME>
+     <CMPNAME>SET_WEBSERVICE</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Retorno do Web Service</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
