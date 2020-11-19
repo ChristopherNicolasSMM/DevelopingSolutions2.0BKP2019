@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TRAN" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TSTC>
+    <TCODE>ZDSOL_CNPJ_CONS</TCODE>
+    <CINFO>Ag==</CINFO>
+   </TSTC>
+   <TSTCC>
+    <TCODE>ZDSOL_CNPJ_CONS</TCODE>
+    <S_WEBGUI>1</S_WEBGUI>
+    <S_WIN32>X</S_WIN32>
+    <S_PLATIN>X</S_PLATIN>
+   </TSTCC>
+   <TSTCT>
+    <SPRSL>P</SPRSL>
+    <TCODE>ZDSOL_CNPJ_CONS</TCODE>
+    <TTEXT>ZDSOL_CNPJ_CONS</TTEXT>
+   </TSTCT>
+   <TSTCP>
+    <TCODE>ZDSOL_CNPJ_CONS</TCODE>
+    <PARAM>/*SM30 VIEWNAME=ZDSOL_CNPJ_CONS;UPDATE=X;</PARAM>
+   </TSTCP>
+  </asx:values>
+ </asx:abap>
+</abapGit>

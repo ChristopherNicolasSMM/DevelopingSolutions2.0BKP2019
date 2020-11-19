@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Soluções MM</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZMM_SOLUTIONSF01</SOBJ_NAME>
+    <SOBJ_NAME>LZMM_SOLUTIONSTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZMM_SOLUTIONS</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFMM_001</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>ZFMM_001</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>NUMERO_FORNECEDOR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>LIFNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>NUMERO_PEDIDO_COMPRA</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>EKKO-EBELN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>NUMERO_NF</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>J_1BDOCNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>DATA_INICIO</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ERDAT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>DATA_FINAL</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ERDAT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>RFC_001</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZMM_TT_RFC_001</TYP>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>NUMERO_FORNECEDOR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data de criação do registro</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NUMERO_PEDIDO_COMPRA</PARAMETER>
+       <KIND>P</KIND>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NUMERO_NF</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data de criação do registro</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DATA_INICIO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data de criação do registro</STEXT>
+       <INDEX> 004</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DATA_FINAL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data de criação do registro</STEXT>
+       <INDEX> 005</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RFC_001</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tabela de trabalho para RFC ZFMM_001</STEXT>
+       <INDEX> 006</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFMM_002</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>ZFMM_002</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>DATA_INICIO</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ERDAT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>DATA_FINAL</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ERDAT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>RFC_002</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZMM_TT_RFC_002</TYP>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>DATA_INICIO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data de criação do registro</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DATA_FINAL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data de criação do registro</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RFC_002</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tabela de trabalho para RFC ZFMM_002</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFMM_003</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>ZFMM_003</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>NUMERO_FORNECEDOR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>LIFNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>NUMERO_PEDIDO_COMPRA</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>EKKO-EBELN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>DATA_INICIO</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ERDAT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>DATA_FINAL</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ERDAT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>RFC_003</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZMM_TT_RFC_003</TYP>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>NUMERO_FORNECEDOR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº conta do fornecedor</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NUMERO_PEDIDO_COMPRA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº do documento de compras</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DATA_INICIO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data de criação do registro</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DATA_FINAL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data de criação do registro</STEXT>
+       <INDEX> 004</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RFC_003</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tabela de trabalho para RFC ZFMM_003</STEXT>
+       <INDEX> 005</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

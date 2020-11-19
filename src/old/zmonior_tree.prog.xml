@@ -1,0 +1,1255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZMONIOR_TREE</NAME>
+    <SUBC>1</SUBC>
+    <APPL>S</APPL>
+    <RLOAD>D</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <DYNPROS>
+    <item>
+     <HEADER>
+      <PROGRAM>ZMONIOR_TREE</PROGRAM>
+      <SCREEN>0100</SCREEN>
+      <LANGUAGE>D</LANGUAGE>
+      <DESCRIPT>MDAT Framework V. Beta 1.0</DESCRIPT>
+      <TYPE>N</TYPE>
+      <NEXTSCREEN>0100</NEXTSCREEN>
+      <LINES>100</LINES>
+      <COLUMNS>180</COLUMNS>
+     </HEADER>
+     <CONTAINERS>
+      <RPY_DYCATT>
+       <TYPE>SCREEN</TYPE>
+       <NAME>SCREEN</NAME>
+      </RPY_DYCATT>
+      <RPY_DYCATT>
+       <TYPE>CUST_CTRL</TYPE>
+       <NAME>TREE1</NAME>
+       <ELEMENT_OF>SCREEN</ELEMENT_OF>
+       <LINE>001</LINE>
+       <COLUMN>001</COLUMN>
+       <LENGTH>180</LENGTH>
+       <HEIGHT>100</HEIGHT>
+       <C_RESIZE_V>X</C_RESIZE_V>
+       <C_LINE_MIN>001</C_LINE_MIN>
+      </RPY_DYCATT>
+     </CONTAINERS>
+     <FIELDS>
+      <RPY_DYFATC>
+       <CONT_TYPE>SCREEN</CONT_TYPE>
+       <CONT_NAME>SCREEN</CONT_NAME>
+       <TYPE>OKCODE</TYPE>
+       <NAME>G_OK_CODE</NAME>
+       <TEXT>____________________</TEXT>
+       <LENGTH>020</LENGTH>
+       <VISLENGTH>020</VISLENGTH>
+       <HEIGHT>001</HEIGHT>
+       <FORMAT>CHAR</FORMAT>
+       <INPUT_FLD>X</INPUT_FLD>
+      </RPY_DYFATC>
+     </FIELDS>
+     <FLOW_LOGIC>
+      <RPY_DYFLOW>
+       <LINE>PROCESS BEFORE OUTPUT.</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW/>
+      <RPY_DYFLOW>
+       <LINE>MODULE PBO_100.</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW/>
+      <RPY_DYFLOW>
+       <LINE>PROCESS AFTER INPUT.</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW>
+       <LINE>MODULE PAI_100.</LINE>
+      </RPY_DYFLOW>
+     </FLOW_LOGIC>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </DYNPROS>
+   <CUA>
+    <ADM>
+     <ACTCODE>0001</ACTCODE>
+     <PFKCODE>0001</PFKCODE>
+    </ADM>
+    <STA>
+     <RSMPE_STAT>
+      <CODE>0100</CODE>
+      <MODAL>D</MODAL>
+      <ACTCODE>0001</ACTCODE>
+      <PFKCODE>0001</PFKCODE>
+      <BUTCODE>0001</BUTCODE>
+      <INT_NOTE>Status zu SAPCOLUMN_TREE_CONTROL_DEMO</INT_NOTE>
+     </RSMPE_STAT>
+     <RSMPE_STAT>
+      <CODE>MAIN</CODE>
+      <MODAL>D</MODAL>
+      <ACTCODE>0001</ACTCODE>
+      <PFKCODE>0001</PFKCODE>
+      <BUTCODE>0001</BUTCODE>
+      <INT_NOTE>Status zu SAPCOLUMN_TREE_CONTROL_DEMO</INT_NOTE>
+     </RSMPE_STAT>
+    </STA>
+    <FUN>
+     <RSMPE_FUNT>
+      <CODE>BACK</CODE>
+      <TEXTNO>01</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Voltar</FUN_TEXT>
+      <PATH>L</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>BACK</CODE>
+      <TEXTNO>02</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Encerrar</FUN_TEXT>
+      <PATH>E</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>BACK</CODE>
+      <TEXTNO>03</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_CANCEL</TEXT_NAME>
+      <ICON_ID>@0W@</ICON_ID>
+      <FUN_TEXT>Cancelar</FUN_TEXT>
+      <PATH>O</PATH>
+     </RSMPE_FUNT>
+    </FUN>
+    <PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>03</PFNO>
+      <FUNCODE>BACK</FUNCODE>
+      <FUNNO>01</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>12</PFNO>
+      <FUNCODE>BACK</FUNCODE>
+      <FUNNO>03</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>0001</CODE>
+      <PFNO>15</PFNO>
+      <FUNCODE>BACK</FUNCODE>
+      <FUNNO>02</FUNNO>
+     </RSMPE_PFK>
+    </PFK>
+    <SET>
+     <RSMPE_STAF>
+      <STATUS>0100</STATUS>
+      <FUNCTION>BACK</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>MAIN</STATUS>
+      <FUNCTION>BACK</FUNCTION>
+     </RSMPE_STAF>
+    </SET>
+    <DOC>
+     <RSMPE_ATRT>
+      <OBJ_TYPE>P</OBJ_TYPE>
+      <OBJ_CODE>0001</OBJ_CODE>
+      <MODAL>D</MODAL>
+     </RSMPE_ATRT>
+    </DOC>
+   </CUA>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>C11</KEY>
+     <ENTRY>Filho1 coluna1</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>C12</KEY>
+     <ENTRY>Filho1 coluna2</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>C13</KEY>
+     <ENTRY>Filho1 coluna3</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>CO2</KEY>
+     <ENTRY>Coluna2</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>CO3</KEY>
+     <ENTRY>Coluna3</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>N11</KEY>
+     <ENTRY>Novo1 coluna1</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>N13</KEY>
+     <ENTRY>Novo1 coluna3</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>N21</KEY>
+     <ENTRY>Novo2 coluna1</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>N22</KEY>
+     <ENTRY>Novo2 coluna2</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>N23</KEY>
+     <ENTRY>Novo2 coluna3</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>RO1</KEY>
+     <ENTRY>Raiz coluna1</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>RO2</KEY>
+     <ENTRY>Raiz coluna2</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>RO3</KEY>
+     <ENTRY>Raiz coluna3</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>ROO</KEY>
+     <ENTRY>Cabeçalho da hierarquia</ENTRY>
+     <LENGTH>30</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Exemplo: Column Tree Control (com documentação)</ENTRY>
+     <LENGTH>70</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>R</ID>
+       <ENTRY>MDAT Framework V. Beta 1.0</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>E</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>C11</KEY>
+       <ENTRY>Chld1 Column1</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>C12</KEY>
+       <ENTRY>Chld1 Column2</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>C13</KEY>
+       <ENTRY>Chld1 Column3</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>CO2</KEY>
+       <ENTRY>Column2</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>CO3</KEY>
+       <ENTRY>Column3</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>N11</KEY>
+       <ENTRY>New1 Column1</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>N13</KEY>
+       <ENTRY>New1 Column3</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>N21</KEY>
+       <ENTRY>New2 Column1</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>N22</KEY>
+       <ENTRY>New2 Column2</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>N23</KEY>
+       <ENTRY>New2 Column3</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>RO1</KEY>
+       <ENTRY>Root   Column1</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>RO2</KEY>
+       <ENTRY>Root   Column2</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>RO3</KEY>
+       <ENTRY>Root   Column3</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>ROO</KEY>
+       <ENTRY>Hierarchy Header</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Example: Column Tree Control (with Documentation)</ENTRY>
+       <LENGTH>70</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZMONIOR_TREE</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0012</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00069</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZMONIOR_TREE</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00012</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DESCRIPTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Der Report SAPCOLUMN_TREE_CONTROL_DEMO demonstriert die Verwendung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>eines Tree Controls mit Spalten (Klasse CL_GUI_COLUMN_TREE).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Bei einem COLUMN_TREE sind die Einträge eines Knotens (Items) in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Spalten organisiert. In diesem Beispiel hat der Baum drei Spalten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Diese Spalten haben die logischen Namen &apos;Column1&apos;, &apos;Column2&apos; und</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&apos;Column3&apos;. Der oberste Knoten hat in jeder dieser Spalten einen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Eintrag:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&apos;Root Col. 1&apos; in der Spalte &apos;Column1&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&apos;Root Col. 2&apos; in der Spalte &apos;Column2&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&apos;Root Col. 3&apos; in der Spalte &apos;Column3&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In einem COLUMN_TREE gibt es zwei Arten von Spalten:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Spalten im Hierarchiebereich: Diese Spalten befinden sich unterhalb des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Hierarchie-Headers. Der Hierarchie-Header ist die erste Überschrift von</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>links im Control (im Beispiel: &apos;Hierarchie Header&apos;). Üblicherweise</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>befindet sich genau eine Spalte im Hierarchie-Bereich. Im Beispiel ist</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>es die Spalte mit Namen &apos;Column1&apos;, in der die Einträge &apos;Root Col.1 &apos;,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&apos;Child1 Col. 1&apos; usw. zu finden sind.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Spalten außerhalb des Hierarchie-Bereichs: Diese Spalten haben eine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>eigene Überschrift (Header). Im Beispiel gibt es zwei Spalten außerhalb</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>des Hierarchie-Bereichs, die die Überschriften &apos;Column2&apos; und &apos;Column3&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>haben.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ein Knoten des Baumes wird durch die Dictionary-Struktur TREEV_NODE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>beschrieben. Das Feld NODE_K0EY beinhaltet den Schlüssel des Knotens.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Jeder Knoten des Baumes kann Items besitzen. Ein Item wird durch die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Dictionary-Struktur TREEV_ITEM beschrieben, die der Verwender des Tree</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Controls um das Character-Feld TEXT (beliebiger Länge!) erweitern muß.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>In diesem Beispielreport wird TREEV_ITEM in die Struktur MTREEITM</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>inkludiert, um ein Feld mit Namen TEXT hinzuzufügen. Das Feld NODE_KEY</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>bestimmt, zu welchem Knoten ein Item gehört. Das Feld ITEM_NAME</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>definiert, in welcher Spalte das Item steht.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Beispiel: Es folgen die drei Items des oberen Wurzelknotens:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>NODE_KEY  ITEM_NAME  TEXT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Root      Column1    Root Col. 1</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Root      Column2    Root Col. 2</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Root      Column3    Root Col. 3</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>Selektion</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Items eines Knotens sind einzeln selektierbar. Ein Klick auf das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Ordner- / Blatt-Symbol eines Knotens selektiert den gesamten Knoten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Das Selektionsverhalten des Baumes kann auch so eingestellt werden, daß</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ein Klick immer den gesamten Knoten selektiert</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(ITEM_SELECTION-Parameter des Konstruktors initial setzten). In diesem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Fall sind Drucktasten, Links und eingabebereite Ankreuzfelder nicht</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>zulässig.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>Events</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Im Rahmen am rechten Dynprorand werden aufgetretene Events angezeigt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Folgende Events können im Beispielprogramm ausgelöst werden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>node double click</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ein Knoten wurde doppelgeklickt. Im Beispiel ist dies durch Doppelklick</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>auf das Ordner-/Blatt-Symbol zu erreichen. Wird ITEM_SELECTION auf</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>SPACE-gesetzt, wird dieses Event gefeuert, wenn irgendein Teil des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Knotens doppelgeklickt wird.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>item double click</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ein Item des Baumes wurde doppelgeklickt. Dieses Event kann nur</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>auftreten, wenn ITEM_SELECTION = &apos;X&apos; ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>expand no children</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ein Knoten kann die Eigenschaft haben, daß er am Ordner-/Blatt-Symbol</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ein + zeigt, obwohl im Control keine Kinder vorhanden sind (Feld</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>expander in TREEV_NODE setzen). Klickt der Benutzer auf einen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>derartigen Knoten, so wird das Event EXPAND_NO_CHILDREN gefeuert. Im</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Beispiel hat der Knoten &quot;Child1&quot; diese Eigenschaft. Das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Beispielprogramm reagiert auf dieses Event mit dem Überspielen von zwei</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>neuen Knoten an das Control (New1 und New2).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>header_click</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Der Benutzer hat einen Header des Controls geklickt. Im</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>node_key-Ausgabefeld wird der Name des geklickten Headers angezeigt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>button_click</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Der Benutzer hat ein Item geklickt, welches eine Drucktaste ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>link_click</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Der Benutzer hat ein Item geklickt, welches ein Link ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PRECONDITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZMONIOR_TREE</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0012</VERSION>
+      <TXTLINES>00065</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZMONIOR_TREE</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00012</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DESCRIPTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This program demonstrates a tree control with columns (class</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>CL_GUI_COLUMN_TREE).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In a COLUMN_TREE, the entries in each node (item) are organized in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>columns. The tree in this example has three columns with the logical</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>names &apos;Column1&apos;, &apos;Column2&apos;, and &apos;Column3&apos;. The topmost node has an</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>entry in each of these columns:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&apos;Root Col. 1&apos; in column  &apos;Column1&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&apos;Root Col. 2&apos; in column &apos;Column2&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&apos;Root Col. 3&apos; in column &apos;Column3&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>A COLUMN_TREE has two kinds of column:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Columns in the hierarchy area: These columns appear underneath the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>hierarchy header. The hierarchy header is the first header from the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>left in the control (&apos;Hierarchy Header&apos; in the example). There is</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>usually only one column in the hierarchy area. In the example, this is</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the column with the name &apos;Column1&apos;, which contains the entries &apos;Root</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Col.1 &apos;, &apos;Child1 Col. 1&apos; and so on.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Columns outside the hierarchy area: These columns have their own</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>header. In the example, there are two such columns, with the headers</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&apos;Column2&apos; and &apos;Column3&apos;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Each node in the tree is described by the ABAP Dictionary structure</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>TREEV_NODE. The field NODE_KEY contains the node key.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Each node in the tree can have items; each item is described by the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ABAP Dictionary structure TREEV_ITEM, which the user of the tree</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>control must extend by the character field TEXT (any length). In the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>example program, TREEV_ITEM is included in the structure MTREEITM,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>which also contains a field called TEXT. The NODE_KEY field determines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the node to which an item belongs. The ITEM_NAME field defines the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>column in which the item appears.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Example: Below are the three items from the topmost root node:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>NODE_KEY  ITEM_NAME  TEXT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Root      Column1    Root Col. 1</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Root      Column2    Root Col. 2</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Root      Column3    Root Col. 3</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>Selection</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The items of a node can be selected individually. If you click the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>folder or leaf symbol of a node, the entire node is selected.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>You can set the selection method of the tree so that every click,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>wherever it occurs, always selects the entire node (set the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ITEM_SELECTION parameter of the constructor method to initial). In this</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>case, you cannot use pushbuttons, links, or changeable checkboxes.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>Events</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The program displays events as they occur in the right-hand frame on</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the screen. The following events can be triggered in the example</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>program:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>node double click</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Double click on a node. In the example, you have to double-click the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>folder or leaf symbol of the node. If ITEM_SELECTION is set to SPACE,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the event is triggered when you double-click anywhere on the node.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>item double click</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Double click on an item in the tree. This event can only occur if</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ITEM_SELECTION = &apos;X&apos;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>expand no children</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>A node can display a plus sign in its folder symbol, even though it has</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>no child nodes (you need to set the EXPANDER field in TREEV_NODE). If</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the user clicks one of these nodes, the EXPAND_NO_CHILDREN event is</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>triggered. In the example, the node &quot;Child1&quot; has this attribute. The</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>example program reacts to this event by passing two new nodes to the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>control (New1 and New2).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>header_click</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The user clicked a header in the control. The program displays the name</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>of the header in the output field node_key.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>button_click</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The user clicked a pushbutton item.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>link_click</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The user clicked a link item.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PRECONDITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZMONIOR_TREE</OBJECT>
+      <LANGU>P</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0012</VERSION>
+      <TXTLINES>00066</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZMONIOR_TREE</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>P</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00012</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DESCRIPTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>O report SAPCOLUMN_TREE_CONTROL_DEMO demonstra a utilização de um Tree</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Controls com colunas (classe CL_GUI_COLUMN_TREE).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Em um COLUMN_TREE as entradas de um nó (itens) são organizadas em</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>colunas. Neste exemplo, a árvore possui três colunas. Estas colunas</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>possuem os nomes lógicos &apos;Column1&apos;, &apos;Column2&apos; e &apos;Column3&apos;. O nó</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>superior possui uma entrada em cada uma destas colunas:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&apos;Root Col. 1&apos; na coluna &apos;Column1&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&apos;Root Col. 2&apos; na coluna &apos;Column2&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&apos;Root Col. 3&apos; na coluna &apos;Column3&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Em um COLUMN_TREE existem dois tipos de colunas:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Colunas com áreas de hierarquia: estas colunas estão sob o cabeçalho de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>hierarquia. O cabeçalho de hierarquia é o primeiro título à esquerda no</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>controle (no exemplo: &apos;Cabeçalho de hierarquia&apos;). Normalmente, existe</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>exatamente uma coluna na área de hierarquia. No exemplo, é a coluna com</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>o nome &apos;Column1&apos;, em que se encontram as entradas &apos;Root Col.1 &apos;,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&apos;Child1 Col. 1&apos;, etc..</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Colunas fora da área de hierarquia: estas colunas possuem um título</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>próprio (cabeçalho). No exemplo, existem duas colunas fora da área de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>hirarquia, que possuem os títulos &apos;Column2&apos; e &apos;Column3&apos;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Um nó de uma árvore é descrito pela estrutura do ABAP Dictionary</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>TREEV_NODE. O campo NODE_K0EY possui a chave dos nós.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Cada nó da árvore pode possuir itens. Um item é descrito pela estrutura</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>do ABAP Dictionary TREEV_ITEM, que deve ser ampliado pelo usuário do</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Tree Controls com o campo de texto TEXT (qualquer comprimento!). Neste</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>report de exemplo, é incluído o TREEV_ITEM na estrutura MTREEITM, de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>modo a inserir um campo com o nome TEXT. O campo NODE_KEY determina a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>que nó pertence um item. O campo ITEM_NAME define em que coluna se</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>encontra o item.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Exemplo: os três itens do nó raiz superior são:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>NODE_KEY  ITEM_NAME  TEXT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Root      Column1    Root Col. 1</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Root      Column2    Root Col. 2</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Root      Column3    Root Col. 3</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>Seleção</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Os itens de um nó podem ser selecionados individualmente. Um clique no</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>símbolo de pasta/folha de um nó seleciona todo o nó.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>O procedimento de seleção da árvore pode determinar que um clique</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>selecione sempre todo o nó (definir o parâmetro ITEM_SELECTION do</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>construtor como incial). Neste caso, os botões, links e campos de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>seleção prontos para entrada não são permitidos.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>Eventos</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>No quadro na margem direita da tela são exibidos os eventos ocorridos.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>É possível acionar os seguintes eventos no programa de exemplos:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>node double click</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Foi efetuado clique duplo em um nó. No exemplo, este é acessado através</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>de clique duplo no símbolo de pasta/folha. Se ITEM_SELECTION estiver</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>definido como SPACE, o evento é acionado, se for efetuado clique duplo</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>numa parte qualquer do nó.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>item double click</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Foi efetuado clique duplo em um item da árvore. Este evento só pode</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ocorrer, se ITEM_SELECTION = &apos;X&apos; estiver definido.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>expand no children</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Um nó pode estar configurado de modo a que seja indicado um + no</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>símbolo de pasta/folha, apesar de não existirem filhos no controle</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(definir o campo expander em TREEV_NODE). Se o usuário clicar em um nó</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>qualquer, o evento EXPAND_NO_CHILDREN é acionado. No exemplo, o nó</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&quot;Child1&quot; possui esta característica. O programa de exemplos reage a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>este evento, efetuando a transferência de dois nós novos para o</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>controle (New1 und New2).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>header_click</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>O usuário clicou em um cabeçalho do controle. No node_key-Ausgabefeld é</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>exibido o nome do cabeçalho clicado.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>button_click</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>O usuário clicou em um item que é um botão.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>link_click</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>O usuário clicou em um item que é um link.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PRECONDITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
